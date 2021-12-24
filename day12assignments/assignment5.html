@@ -1,0 +1,15 @@
+<html>
+<body>
+
+<h1>convert JSON string to js object, then change lastName of Anna to Xyz, and now convert js object, to string, and then print in console.</h1>
+<script>
+var text = '{"names":[' +'{"firstName":"Anna","lastName":"Smith" },'  +'{"firstName":"harini","lastName":"kaur" },' +'{"firstName":"raadhe","lastName":"antim" }]}';
+const name = JSON.parse(text);
+name.names[0].lastName = "XYZ";
+var newText = JSON.stringify(name);
+console.log(newText);
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+         function fibonacci() {
+            let n1 = 0, n2 = 1,n3;
+            var number = parseInt(document.getElementById("last").value);
+            for (let i = 1; i <= number; i++) {
+                document.getElementById("fibonacciloop").innerHTML += (n1 +" ");
+                    n3 = n1 + n2;
+                    n1 = n2;
+                    n2 = n3;
+            }
+        }
+</script>
+</head>
+<body>
+    <b>Enter any number to create Fibonacci Series :</b> <input type="text" name="intvalue" id="last" value="" />
+    <div id="fibonacciloop"></div>
+    <input type="button" name="fbBt" value="Fibonacci Series" onClick="fibonacci()"/>
+</body>
+</html>

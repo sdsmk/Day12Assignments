@@ -1,0 +1,45 @@
+<html>
+<head>
+
+    <body>
+        <b> Select your interests :</b>
+        <br></br>
+        <input type="checkbox" name="firstone" id="check1" value="Cricket">Cricket</input>
+        <input type="checkbox" name="secondone" id="check2" value="Reading">Reading</input>
+        <input type="checkbox" name="thirdone" id="check3" value="Badminton">Badminton</input>
+        <input type="checkbox" name="fourthone" id="check4" value="Football">Football</input>
+        <br></br>
+        <input type="button" id="clickbtn" value = "submit" onClick="clickcheck()" />
+        </body>
+<script>
+function clickcheck()
+{
+
+    var firstone = document.getElementById("check1");
+    var secondone = document.getElementById("check2");
+    var thirdone = document.getElementById("check3");
+    var fourthone = document.getElementById("check4");
+
+    var selected = "Selected interests : ";
+    if(firstone.checked == true)
+    {
+        selected += check1.value;
+    }
+    if(secondone.checked == true)
+    {
+        selected += ("- "+check2.value);
+    }
+    if(thirdone.checked == true)
+    {
+        selected += ("- "+check3.value);
+    }
+    if(fourthone.checked == true)
+    {
+        selected += ("- "+check4.value);
+    }
+    alert(selected);
+
+}
+</script>
+</head>
+</html>
